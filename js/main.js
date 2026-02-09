@@ -124,3 +124,43 @@ themeToggle.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('accueil');
 });
+
+function showSectionFromHash() {
+  const hash = window.location.hash || "#accueil";
+  const target = document.querySelector(hash);
+  if (!target) return;
+
+  // Cache toutes les sections principales
+  document.querySelectorAll("main > section").forEach(sec => {
+    sec.classList.remove("page-active");
+    sec.classList.add("page-inactive");
+  });
+
+  // Affiche la section ciblée
+  target.classList.remove("page-inactive");
+  target.classList.add("page-active");
+
+  // Scroll (optionnel)
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+  // (optionnel) mettre à jour l'état "active" dans le menu
+  document.querySelectorAll(".nav-link").forEach(a => a.classList.remove("active"));
+  const activeLink = document.querySelector(`.nav-link[href="${hash}"]`);
+  if (activeLink) activeLink.classList.add("active");
+}
+
+// Quand on clique sur un lien #...
+document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const hash = link.getAttribute("href");
+    history.pushState(null, "", hash);
+    showSectionFromHash();
+  });
+});
+
+// Quand on arrive sur le site avec un #... dans l’URL
+window.addEventListener("DOMContentLoaded", showSectionFromHash);
+
+// Quand le hash change (ex: back/forward du navigateur)
+window.addEventListener("hashchange", showSectionFromHash);
