@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique — Camille Marsac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4.1">
+    <link rel="stylesheet" href="css/refresh.css?v=1.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Camille<span>Marsac</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li class="nav-item"><a href="certifications.html" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="veille.html" class="nav-link">Veille Technologique</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-transition">
+        <section class="veille-section-page section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Veille Technologique</h2>
+                </div>
+
+                <div class="veille-hero">
+                    <span class="veille-kicker">Souveraineté numérique en France</span>
+                    <p class="veille-lede">
+                        De la prise de conscience à l'action concrète.
+                        Retour en une frise sur les évènements qui ont fait basculer la souveraineté numérique française de l'incantation à la mise en œuvre — puis projection sur les chantiers qui restent à mener.
+                    </p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════
+                     FRISE CHRONOLOGIQUE HORIZONTALE
+                     ═══════════════════════════════════════════ -->
+                <div class="veille-timeline-head">
+                    <h3 class="veille-subtitle">Frise chronologique</h3>
+                </div>
+
+                <div class="veille-timeline" role="list">
+
+                    <!-- 1. Mai 2024 — Loi SREN -->
+                    <a href="https://incyber.org/article/france-loi-sren-renforce-position-acteurs-cloud-souverains/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="incyber.org" style="--vcard-grad: linear-gradient(135deg,#1e3a8a,#3b82f6);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://incyber.org&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">incyber.org</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Mai 2024</span>
+                            <h4 class="veille-card-title">La loi SREN</h4>
+                            <p class="veille-card-desc">
+                                Tout a commencé ici. Après des années de discours sans actes, la France se dote enfin d'un cadre juridique qui impose aux administrations d'utiliser des clouds certifiés pour leurs données sensibles.
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 2. Novembre 2024 — Sciences Po -->
+                    <a href="https://www.sciencespo.fr/public/chaire-numerique/dossiers-de-recherche/cloud-souverain/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="sciencespo.fr" style="--vcard-grad: linear-gradient(135deg,#7c2d12,#f97316);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sciencespo.fr&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">sciencespo.fr</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Novembre 2024</span>
+                            <h4 class="veille-card-title">Dossier de recherche — Cloud souverain</h4>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 3. Décembre 2024 — Sopra Steria -->
+                    <a href="https://www.usine-digitale.fr/souverainete/souverainete-numerique-sopra-steria-lance-une-suite-bureautique-collaborative-europeenne-et-100-open-source.OH4GGZEYJNFWVLJ25C5WE2IDP4.html"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="usine-digitale.fr" style="--vcard-grad: linear-gradient(135deg,#065f46,#10b981);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.usine-digitale.fr&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">usine-digitale.fr</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Décembre 2024</span>
+                            <h4 class="veille-card-title">Sopra Steria — Suite bureautique européenne 100 % open source</h4>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 4. Janvier 2025 — Sommet Bercy -->
+                    <a href="https://community.ima-dt.org/sommet-souverainete-tech-autonomie-strategique"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="ima-dt.org" style="--vcard-grad: linear-gradient(135deg,#312e81,#6366f1);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://community.ima-dt.org&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">ima-dt.org</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Janvier 2025</span>
+                            <h4 class="veille-card-title">Le sujet devient une priorité nationale</h4>
+                            <p class="veille-card-desc">
+                                C'est un tournant politique fort : 600 dirigeants publics et privés se réunissent à Bercy. Pour la première fois, la souveraineté numérique est traitée comme une urgence stratégique nationale.
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 5. Mars 2025 — Institut Montaigne -->
+                    <a href="https://www.institutmontaigne.org/publications/infrastructures-numeriques-un-plan-decisif"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="institutmontaigne.org" style="--vcard-grad: linear-gradient(135deg,#991b1b,#ef4444);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.institutmontaigne.org&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">institutmontaigne.org</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Mars 2025</span>
+                            <h4 class="veille-card-title">Le chiffre qui change tout</h4>
+                            <p class="veille-card-desc">
+                                L'Institut Montaigne publie un rapport qui fait l'effet d'un électrochoc : 70 % des données françaises sont hébergées sur des clouds américains. La dépendance n'est plus une impression — elle est chiffrée et documentée.
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 6. Octobre 2025 — Cour des comptes -->
+                    <a href="https://www.ccomptes.fr/fr/publications/les-enjeux-de-souverainete-des-systemes-dinformation-civils-de-letat"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="ccomptes.fr" style="--vcard-grad: linear-gradient(135deg,#1e293b,#475569);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.ccomptes.fr&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">ccomptes.fr</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Octobre 2025</span>
+                            <h4 class="veille-card-title">La Cour des comptes tire la sonnette d'alarme</h4>
+                            <p class="veille-card-desc">
+                                Le constat devient institutionnel : certains ministères stockent des données sensibles chez des acteurs extra-européens. La souveraineté affichée et la réalité opérationnelle sont encore très éloignées.
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 7. Novembre 2025 — Wikipédia -->
+                    <a href="https://fr.wikipedia.org/wiki/Souverainet%C3%A9_num%C3%A9rique"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="fr.wikipedia.org" style="--vcard-grad: linear-gradient(135deg,#334155,#94a3b8);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://fr.wikipedia.org&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">fr.wikipedia.org</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Novembre 2025</span>
+                            <h4 class="veille-card-title">Souveraineté numérique — Wikipédia</h4>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 8. Janvier 2026 — Observatoire -->
+                    <a href="https://www.strategie-plan.gouv.fr/actualites/lancement-de-lobservatoire-de-la-souverainete-numerique-mesurer-les-dependances-pour"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="strategie-plan.gouv.fr" style="--vcard-grad: linear-gradient(135deg,#1e40af,#60a5fa);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.strategie-plan.gouv.fr&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">strategie-plan.gouv.fr</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Janvier 2026</span>
+                            <h4 class="veille-card-title">L'État se dote d'outils de mesure</h4>
+                            <p class="veille-card-desc">
+                                Le gouvernement lance l'Observatoire de la souveraineté numérique pour cartographier toutes les dépendances numériques de la France. Comme le dit la ministre : « la souveraineté commence par la lucidité. »
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 9. Février 2026 — Circulaire Lecornu -->
+                    <a href="https://www.avocats-mathias.com/cybersecurite/ancrer-la-souverainete-numerique-au-coeur-de-la-commande-publique-circulaire-lecornu-du-5-fevrier-2026-et-decret-dapplication-de-la-loi-sren"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card" role="listitem">
+                        <div class="veille-card-media" data-domain="avocats-mathias.com" style="--vcard-grad: linear-gradient(135deg,#4c1d95,#a78bfa);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.avocats-mathias.com&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">avocats-mathias.com</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Février 2026</span>
+                            <h4 class="veille-card-title">Souveraineté numérique au cœur de la commande publique</h4>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- 10. Avril 2026 — DINUM Linux -->
+                    <a href="https://www.numerique.gouv.fr/sinformer/espace-presse/souverainete-numerique-reduction-dependances-extra-europeennes/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="veille-card veille-card--hero" role="listitem">
+                        <div class="veille-card-media" data-domain="numerique.gouv.fr" style="--vcard-grad: linear-gradient(135deg,#0c4a6e,#38bdf8);">
+                            <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.numerique.gouv.fr&size=128" alt="" loading="lazy">
+                            <span class="veille-card-domain">numerique.gouv.fr</span>
+                        </div>
+                        <div class="veille-card-body">
+                            <span class="veille-card-date">Avril 2026</span>
+                            <h4 class="veille-card-title">Le basculement dans le réel</h4>
+                            <p class="veille-card-desc">
+                                C'est l'événement le plus symbolique. La DINUM annonce la sortie officielle de Windows au profit de Linux, et impose à chaque ministère un plan de migration avant l'automne. 2,5 millions d'agents publics sont concernés — c'est le plan le plus ambitieux jamais lancé en Europe.
+                            </p>
+                            <span class="veille-card-cta">Lire l'article <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- ═══════════════════════════════════════════
+                     ENJEUX FUTURS
+                     ═══════════════════════════════════════════ -->
+                <div class="veille-enjeux-wrap">
+                    <div class="veille-enjeux-head">
+                        <span class="veille-enjeux-kicker"><i class="fas fa-compass" aria-hidden="true"></i> Les enjeux futurs</span>
+                        <h3 class="veille-enjeux-title">La France a franchi un cap symbolique, mais les défis restent immenses.</h3>
+                    </div>
+
+                    <div class="veille-enjeux-grid">
+
+                        <article class="veille-enjeu">
+                            <div class="veille-enjeu-icon" style="--enjeu-color:#f59e0b;">
+                                <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="veille-enjeu-title">La crédibilité, d'abord</h4>
+                            <p class="veille-enjeu-desc">
+                                L'Éducation nationale a prolongé son contrat Microsoft de 152 millions d'euros jusqu'en 2029. Les mots ne suffisent plus — il faut aligner les actes et les discours.
+                            </p>
+                        </article>
+
+                        <article class="veille-enjeu">
+                            <div class="veille-enjeu-icon" style="--enjeu-color:#ef4444;">
+                                <i class="fas fa-landmark" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="veille-enjeu-title">La continuité politique</h4>
+                            <p class="veille-enjeu-desc">
+                                À un an de la présidentielle, le précédent de Munich — migration vers Linux puis marche arrière — rappelle que sans volonté durable, tout peut s'effondrer.
+                            </p>
+                        </article>
+
+                        <article class="veille-enjeu">
+                            <div class="veille-enjeu-icon" style="--enjeu-color:#8b5cf6;">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="veille-enjeu-title">L'IA, le vrai chantier de demain</h4>
+                            <p class="veille-enjeu-desc">
+                                Maîtriser les systèmes d'exploitation ne suffira pas si nos IA sont entraînées sur des serveurs américains. La couche modèle devient le nouveau point de dépendance.
+                            </p>
+                        </article>
+
+                        <article class="veille-enjeu">
+                            <div class="veille-enjeu-icon" style="--enjeu-color:#3b82f6;">
+                                <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="veille-enjeu-title">L'Europe, seul horizon crédible</h4>
+                            <p class="veille-enjeu-desc">
+                                La France seule est trop petite. Le vrai pari : faire du SecNumCloud et du Data Act des standards communs à toute l'Europe pour peser face aux GAFAM et à la Chine.
+                            </p>
+                        </article>
+
+                    </div>
+
+                    <div class="veille-enjeux-sources">
+                        <h4 class="veille-enjeux-sources-title">Pour aller plus loin</h4>
+                        <div class="veille-enjeux-sources-grid">
+                            <a href="https://info.fr/etat-francais-abandonne-windows-linux-souverainete-numerique/"
+                               target="_blank" rel="noopener noreferrer"
+                               class="veille-enjeu-link">
+                                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://info.fr&size=128" alt="" loading="lazy">
+                                <div>
+                                    <span class="veille-enjeu-link-domain">info.fr</span>
+                                    <span class="veille-enjeu-link-title">L'État français abandonne Windows pour Linux : souveraineté numérique</span>
+                                </div>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://www.institutmontaigne.org/expressions/cap-sur-la-souverainete-numerique-leurope-au-defi-de-la-mise-en-oeuvre"
+                               target="_blank" rel="noopener noreferrer"
+                               class="veille-enjeu-link">
+                                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.institutmontaigne.org&size=128" alt="" loading="lazy">
+                                <div>
+                                    <span class="veille-enjeu-link-domain">institutmontaigne.org</span>
+                                    <span class="veille-enjeu-link-title">Cap sur la souveraineté numérique — l'Europe au défi de la mise en œuvre</span>
+                                </div>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Camille Marsac. Tous droits réservés.</p>
+            <p>Étudiant en BTS SIO | Développeur Web</p>
+            <div class="footer-buttons">
+                <a href="cv/CV_Camille_Marsac.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+                <a href="https://mtb849.sharepoint.com/:x:/r/sites/3-BTSSIOPromo2024-2026-LivretApprentissageCamilleMarsac/Documents%20partages/Livret%20Apprentissage%20Camille%20Marsac/6-%20Annexe%206-1%20-%20Tableau%20de%20synth%C3%A8se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024.xlsx?d=wdfd3e6232f2f4662a221cf7059a9c595&csf=1&web=1&e=X2Dej0" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-excel"></i> Tableau de synthèse E4
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/transitions.js"></script>
+    <script>
+        const timeline = document.querySelector('.veille-timeline');
+        if (timeline) {
+            let target = 0;
+            let current = 0;
+            let rafId = null;
+
+            const step = () => {
+                const diff = target - current;
+                if (Math.abs(diff) < 0.5) {
+                    current = target;
+                    timeline.scrollLeft = target;
+                    rafId = null;
+                    return;
+                }
+                current += diff * 0.1;
+                timeline.scrollLeft = current;
+                rafId = requestAnimationFrame(step);
+            };
+
+            timeline.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                if (!rafId) current = timeline.scrollLeft;
+                const max = timeline.scrollWidth - timeline.clientWidth;
+                target = Math.max(0, Math.min(max, target + e.deltaY));
+                if (!rafId) rafId = requestAnimationFrame(step);
+            }, { passive: false });
+        }
+    </script>
+</body>
+</html>

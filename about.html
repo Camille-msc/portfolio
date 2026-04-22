@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos — Camille Marsac</title>
+    <!-- Police professionnelle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4.0">
+    <link rel="stylesheet" href="css/refresh.css?v=1.5">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Camille<span>Marsac</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="competences.html" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille Technologique</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>À propos de moi</h2>
+                </div>
+
+                <!-- Hero À propos : Photo + Présentation -->
+                <div class="about-hero">
+                    <img src="img/about.jpg" alt="Portrait de Camille Marsac" class="about-hero-img">
+                    <div class="about-hero-content">
+                        <h3 class="about-hero-title">Qui suis-je ?</h3>
+                        <p class="about-hero-text">
+                            Bonjour, je m'appelle Camille Marsac, j'ai 19 ans. Je suis actuellement en BTS SIO, option SLAM. J'ai obtenu un baccalauréat général avec les options NSI et mathématiques. J'ai toujours été passionné par l'informatique et je vais vous présenter mon parcours, mes compétences, mes certifications, ma veille sur la souveraineté numérique, ainsi que les projets que j'ai pu réaliser.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Horizontale : Parcours Académique -->
+                <div class="about-timeline-section">
+                    <h3 class="about-section-title">Parcours Académique</h3>
+                    <div class="timeline-horizontal">
+                        <!-- Brevet -->
+                        <div class="timeline-h-item">
+                            <div class="timeline-h-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="timeline-h-card">
+                                <h4>Brevet des collèges</h4>
+                                <p>Mention Bien</p>
+                                <span class="timeline-h-date">2021</span>
+                            </div>
+                        </div>
+
+                        <!-- Bac -->
+                        <div class="timeline-h-item">
+                            <div class="timeline-h-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="timeline-h-card">
+                                <h4>Bac Général</h4>
+                                <p>Options NSI et Mathématiques</p>
+                                <span class="timeline-h-date">2024</span>
+                            </div>
+                        </div>
+
+                        <!-- PIX -->
+                        <div class="timeline-h-item">
+                            <div class="timeline-h-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="timeline-h-card">
+                                <h4>Certification PIX</h4>
+                                <p>570 points — Compétences numériques certifiées</p>
+                                <span class="timeline-h-date">07 novembre 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- BTS SIO -->
+                        <div class="timeline-h-item">
+                            <div class="timeline-h-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-h-card">
+                                <h4>BTS SIO SLAM</h4>
+                                <p>Solutions Logicielles et Applications Métiers</p>
+                                <span class="timeline-h-date">2024 – 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards : Formation / Objectif / Centres d'intérêt -->
+                <div class="about-info-section">
+                    <h3 class="about-section-title">Informations Complémentaires</h3>
+                    <div class="about-info-cards">
+                        <!-- Formation -->
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4 class="info-card-title">Formation</h4>
+                            <p>BTS SIO option SLAM — Solutions Logicielles et Applications Métiers</p>
+                        </div>
+
+                        <!-- Objectif -->
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4 class="info-card-title">Objectif</h4>
+                            <p>Devenir développeur full-stack et contribuer à des projets innovants dans le domaine du numérique</p>
+                        </div>
+
+                        <!-- Centres d'intérêt -->
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="info-card-title">Centres d'intérêt</h4>
+                            <p>Technologies web, Intelligence artificielle, Cybersécurité</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Camille Marsac. Tous droits réservés.</p>
+            <p>Étudiant en BTS SIO | Développeur Web</p>
+            <div class="footer-buttons">
+                <a href="cv/CV_Camille_Marsac.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+                <a href="https://mtb849.sharepoint.com/:x:/r/sites/3-BTSSIOPromo2024-2026-LivretApprentissageCamilleMarsac/Documents%20partages/Livret%20Apprentissage%20Camille%20Marsac/6-%20Annexe%206-1%20-%20Tableau%20de%20synth%C3%A8se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024.xlsx?d=wdfd3e6232f2f4662a221cf7059a9c595&csf=1&web=1&e=X2Dej0" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-excel"></i> Tableau de synthèse E4
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Camille Marsac</title>
+    <!-- Police professionnelle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4.0">
+    <link rel="stylesheet" href="css/refresh.css?v=1.5">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Camille<span>Marsac</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="competences.html" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille Technologique</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Liste des projets -->
+        <section id="projets" class="projects section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Mes Projets</h2>
+                </div>
+                <div class="projects-container">
+                    <!-- Projet RFTG -->
+                    <div class="project-card">
+                        <img src="img/projet-rftg.jpg" alt="Application de réservation de DVD RFTG" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Application Web, Mobile et API</span>
+                            <h3 class="project-title">Application de réservation de DVD</h3>
+                            <p class="project-description">
+                                Portant le nom de <strong>RFTG</strong>, cette application permet de mettre en pratique de nombreuses notions apprises dans le cadre du BTS SIO. Elle permet la réservation de DVD dans un parc d’attraction avec une partie applicative mobile pour les clients, une partie web pour les administrateurs ainsi qu’une API REST connectée à une base de données inspirée du modèle Sakila.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    En développement <i class="fas fa-hammer"></i>
+                                </a>
+                                <a href="#projet-rftg-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet MTCongés -->
+                    <div class="project-card">
+                        <img src="img/mtconges_mainpage_calendrier.png" alt="Interface principale de l’application MTCongés" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Application Java • BTS SIO</span>
+                            <h3 class="project-title">MTCongés</h3>
+                            <p class="project-description">
+                                Application de gestion des congés développée en Java 17 avec une interface Swing et une base de données MySQL. Architecture MVC permettant aux employés de demander des congés, aux responsables de les valider et aux administrateurs de gérer les comptes utilisateurs.
+                            </p>
+                            <div class="project-links">
+                                <a href="#projet-mtconges-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet Assureur -->
+                    <div class="project-card">
+                        <img src="img/assureur_logo.png" alt="Logo client assureur" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Expérience professionnelle</span>
+                            <h3 class="project-title">Mission en entreprise — Client Assureur</h3>
+                            <p class="project-description">
+                                Participation au développement d’une application interne pour un client assureur : codage, tests et documentation dans un environnement professionnel.
+                            </p>
+                            <div class="project-links">
+                                <a href="#projet-assureur-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet Site Podologue -->
+                    <div class="project-card">
+                        <img src="img/projet-podologue.jpg" alt="Site web de podologie d’Argentan" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Développement Web</span>
+                            <h3 class="project-title">Site web pour une podologue</h3>
+                            <p class="project-description">
+                                Création d’un site web professionnel pour une podologue à Argentan, incluant une présentation des services et des informations de contact.
+                            </p>
+                            <div class="project-links">
+                                <a href="http://podologue-argentan.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    Voir le projet <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#projet-podologue-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet Portfolio -->
+                    <div class="project-card">
+                        <img src="img/projet-portfolio.jpg" alt="Portfolio personnel de Camille Marsac" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Projet Personnel</span>
+                            <h3 class="project-title">Portfolio personnel</h3>
+                            <p class="project-description">
+                                Conception et réalisation de mon portfolio personnel, mettant en valeur mes compétences et mes projets.
+                            </p>
+                            <a href="#" class="project-link">
+                                Vous le consultez actuellement <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Détail : Site Podologue -->
+        <section id="projet-podologue-detail" class="project-detail section page-inactive">
+            <div class="container">
+                <a href="#projets" class="back-link lien-detail">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+
+                <div class="project-detail-header">
+                    <h1>Site web pour une podologue</h1>
+                    <span class="project-category">Site Web Professionnel</span>
+                </div>
+
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <img src="img/projet-podologue.jpg" alt="Capture d'écran du site web de podologie">
+                    </div>
+
+                    <div class="project-detail-info">
+                        <h2>Présentation du projet</h2>
+                        <p>Site vitrine professionnel développé pour une podologue afin de créer une présence en ligne professionnelle et attirer de nouveaux patients.</p>
+
+                        <h3>Détails du projet</h3>
+                        <ul>
+                            <li><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript. Hébergeur : O2Switch, FileZilla pour la mise en service sur l'hébergeur</li>
+                            <li><strong>Durée :</strong> 2 semaines</li>
+                            <li><strong>Fonctionnalités :</strong> Site vitrine responsive, présentation des services, HTTPS</li>
+                            <li><strong>Objectifs :</strong> Créer une présence en ligne professionnelle pour attirer de nouveaux patients. Accessible sur la première page de recherche.</li>
+                        </ul>
+
+                        <h3>Défis relevés</h3>
+                        <p>Adapter le design aux besoins spécifiques du secteur médical tout en conservant une interface moderne et accessible.</p>
+
+                        <div class="project-detail-links">
+                            <a href="https://podologue-argentan.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Détail : RFTG -->
+        <section id="projet-rftg-detail" class="project-detail section page-inactive">
+            <div class="container">
+                <a href="#projets" class="back-link lien-detail">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+
+                <div class="project-detail-header">
+                    <h1>RFTG - Raised From The Graveyard</h1>
+                    <span class="project-category">Projet Full-Stack • BTS SIO 2024–2026</span>
+                </div>
+
+                <div class="project-detail-content">
+
+                    <!-- ─────────── INTRO GÉNÉRALE ─────────── -->
+                    <div class="rftg-intro">
+                        <p>
+                            <strong>RFTG</strong> est un projet global de location de films en ligne réalisé dans le cadre du BTS SIO option SLAM.
+                            Il réunit <strong>trois applications interconnectées</strong> autour d'une même base de données, chacune portant un nom issu de l'univers Mario :
+                            une application mobile Android pour les clients, une application web de gestion pour le personnel, et une API REST qui orchestre le tout.
+                        </p>
+
+                        <div class="rftg-meta">
+                            <div class="rftg-meta-item">
+                                <span class="rftg-meta-label">Cadre</span>
+                                <span class="rftg-meta-value">BTS SIO SLAM · 2024–2026</span>
+                            </div>
+                            <div class="rftg-meta-item">
+                                <span class="rftg-meta-label">Base de données</span>
+                                <span class="rftg-meta-value">MySQL 8 (dérivée Sakila)</span>
+                            </div>
+                            <div class="rftg-meta-item">
+                                <span class="rftg-meta-label">Statut</span>
+                                <span class="rftg-meta-value">Projet en cours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ─────────── 4 MODULES ─────────── -->
+                    <div class="rftg-modules">
+                        <div class="rftg-module">
+                            <span class="rftg-module-tag">Mobile · Android</span>
+                            <h3 class="rftg-module-title">Luigi</h3>
+                            <p class="rftg-module-role">Application cliente</p>
+                            <p class="rftg-module-desc">App Android native en Java pour parcourir le catalogue, gérer un panier et louer des films.</p>
+                        </div>
+                        <div class="rftg-module">
+                            <span class="rftg-module-tag">Web · Laravel</span>
+                            <h3 class="rftg-module-title">Mario</h3>
+                            <p class="rftg-module-role">Application administrative</p>
+                            <p class="rftg-module-desc">Interface web interne pour la gestion des films, DVDs, clients et locations en temps réel.</p>
+                        </div>
+                        <div class="rftg-module">
+                            <span class="rftg-module-tag">Backend · Spring Boot</span>
+                            <h3 class="rftg-module-title">Toad</h3>
+                            <p class="rftg-module-role">API REST centrale</p>
+                            <p class="rftg-module-desc">67 endpoints sécurisés par JWT, pont unique entre clients, personnel et base de données.</p>
+                        </div>
+                        <div class="rftg-module">
+                            <span class="rftg-module-tag">Data · MySQL 8</span>
+                            <h3 class="rftg-module-title">Peach</h3>
+                            <p class="rftg-module-role">Base de données</p>
+                            <p class="rftg-module-desc">Schéma dérivé de Sakila, enrichi de migrations versionnées (v0.2 → v0.7).</p>
+                        </div>
+                    </div>
+
+
+                    <!-- ═══════════════════════════════════════════
+                         LUIGI — Application mobile Android
+                         ═══════════════════════════════════════════ -->
+                    <article class="rftg-subproject">
+                        <header class="rftg-subproject-head">
+                            <div class="rftg-sub-icon"><i class="fab fa-android"></i></div>
+                            <div class="rftg-sub-headings">
+                                <span class="rftg-sub-kicker">Luigi</span>
+                                <h2 class="rftg-sub-title">
+                                    Application mobile Android
+                                </h2>
+                            </div>
+                        </header>
+
+                        <div class="project-detail-screenshots" style="margin-top:0; margin-bottom:1.75rem;">
+                            <div class="rftg-screens">
+                                <img src="img/Luigi_RFTG.png" alt="Interface de l'application mobile Luigi">
+                            </div>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Stack technique</h4>
+                            <table class="rftg-stack-table">
+                                <tr><td>Langage</td><td>Java (Android SDK)</td></tr>
+                                <tr><td>Communication réseau</td><td>HttpURLConnection + AsyncTask</td></tr>
+                                <tr><td>Authentification</td><td>Hachage MD5 + token JWT</td></tr>
+                            </table>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Architecture en couches</h4>
+                            <ul class="rftg-list">
+                                <li><strong>Activities</strong> — gestion de l'interface et des interactions utilisateur</li>
+                                <li><strong>AsyncTask</strong> — opérations réseau non bloquantes avec callbacks</li>
+                                <li><strong>Managers (Singleton)</strong> — logique métier centralisée (panier, session, URL)</li>
+                                <li><strong>DatabaseHelper</strong> — accès SQLite encapsulé</li>
+                                <li><strong>Adapters</strong> — liaison données ↔ vues (ListView)</li>
+                            </ul>
+                            <p style="font-size:0.92rem; color:var(--text-light); margin-top:0.75rem;">
+                                Patterns implémentés : Singleton, Facade, Observer/Callback, Adapter.
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Parcours utilisateur</h4>
+                            <div class="rftg-flow">
+                                <span class="rftg-flow-step">Connexion</span>
+                                <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                                <span class="rftg-flow-step">Catalogue filtrable</span>
+                                <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                                <span class="rftg-flow-step">Détail film</span>
+                                <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                                <span class="rftg-flow-step">Ajout au panier</span>
+                                <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                                <span class="rftg-flow-step">Checkout</span>
+                            </div>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">
+                                <i class="fas fa-link" style="color:var(--primary-color); margin-right:0.4rem;"></i>
+                                Liens avec le tableau de synthèse E4
+                            </h4>
+                            <div class="rftg-compete-group">
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C1</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
+                                        <div class="rftg-compete-title">Analyser les objectifs et les modalités d'organisation d'un projet</div>
+                                        <p class="rftg-compete-desc">Le projet a nécessité une phase d'analyse du cahier des charges et de découpage des fonctionnalités avant tout développement.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C1</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
+                                        <div class="rftg-compete-title">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</div>
+                                        <p class="rftg-compete-desc">L'application respecte les standards REST, le protocole HTTP et les conventions JWT pour l'authentification.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Mettre en place et vérifier les niveaux d'habilitation associés à un service</div>
+                                        <p class="rftg-compete-desc">La connexion par identifiants hachés et le token JWT garantissent que seuls les utilisateurs autorisés accèdent au service de location.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Traiter des demandes concernant les applications</div>
+                                        <p class="rftg-compete-desc">Chaque code d'erreur retourné par l'API est intercepté et traduit en retour utilisateur intelligible, simulant un premier niveau de support applicatif.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C4</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Travailler en mode projet</span>
+                                        <div class="rftg-compete-title">Recenser et identifier les ressources numériques</div>
+                                        <p class="rftg-compete-desc">Le catalogue recense et expose l'ensemble des ressources films disponibles côté serveur, rendues navigables et filtrables côté client.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C5</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Mettre à disposition des utilisateurs un service informatique</span>
+                                        <div class="rftg-compete-title">Déployer un service</div>
+                                        <p class="rftg-compete-desc">L'application a été configurée pour fonctionner sur un large parc d'appareils Android, avec une gestion des URL de déploiement adaptable selon l'environnement (émulateur, serveur de test, production).</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C5</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Mettre à disposition des utilisateurs un service informatique</span>
+                                        <div class="rftg-compete-title">Réaliser les tests d'intégration et d'acceptation d'un service</div>
+                                        <p class="rftg-compete-desc">Chaque endpoint REST a été testé manuellement et les scénarios nominaux / erreurs ont été vérifiés avant livraison.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ═══════════════════════════════════════════
+                         MARIO (CMA) — Web de gestion vidéoclub
+                         ═══════════════════════════════════════════ -->
+                    <article class="rftg-subproject">
+                        <header class="rftg-subproject-head">
+                            <div class="rftg-sub-icon"><i class="fab fa-laravel"></i></div>
+                            <div class="rftg-sub-headings">
+                                <span class="rftg-sub-kicker">Mario</span>
+                                <h2 class="rftg-sub-title">
+                                    Application web administrative
+                                </h2>
+                            </div>
+                        </header>
+
+                        <div class="project-detail-screenshots" style="margin-top:0; margin-bottom:1.75rem;">
+                            <div class="rftg-screens">
+                                <img src="img/Mario_RFTG.png" alt="Interface de l'application web Mario — CMA">
+                            </div>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Contexte</h4>
+                            <p style="font-size:0.98rem; line-height:1.7;">
+                                Application web de gestion interne pour gérer l'application de réservation de DVD. Elle permet au personnel de gérer l'ensemble des opérations métier :
+                                catalogue de films, stock de DVDs, clients et locations. <strong>Aucune base locale</strong> —
+                                toutes les données sont consommées via l'API REST Toad.
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Stack technique</h4>
+                            <table class="rftg-stack-table">
+                                <tr><td>Backend</td><td>PHP 8.2 · Laravel 12</td></tr>
+                                <tr><td>Frontend</td><td>Blade · Bootstrap 5 · Bootstrap Icons</td></tr>
+                                <tr><td>Build</td><td>Vite · Sass</td></tr>
+                                <tr><td>API externe</td><td>REST API "Toad" (microservice Java)</td></tr>
+                                <tr><td>Authentification</td><td>SHA-256 + JWT (guard Laravel dédié)</td></tr>
+                            </table>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Architecture</h4>
+                            <p style="font-size:0.95rem; line-height:1.7; margin-bottom:1rem;">
+                                Architecture MVC avec couche de services, entièrement découplée d'une base de données locale.
+                                Authentification sur mesure <strong>sans Eloquent ni Breeze</strong> : le mot de passe est envoyé hashé (SHA-256) à l'endpoint <code>/staffs/verify</code>.
+                                En retour, un token JWT est stocké en session et transmis en Bearer sur chaque appel API sécurisé. Toutes les routes sont protégées par le middleware <code>auth</code>.
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Fonctionnalités</h4>
+                            <ul class="rftg-list">
+                                <li><strong>Films</strong> — liste, fiche détail, création, modification, suppression</li>
+                                <li><strong>DVDs / Inventaire</strong> — gestion du stock physique par film</li>
+                                <li><strong>Clients</strong> — CRUD complet avec gestion de l'état actif / inactif</li>
+                                <li><strong>Locations</strong> — suivi temps réel avec changement de statut (En cours / Dans le panier / Terminé)</li>
+                            </ul>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">
+                                <i class="fas fa-link" style="color:var(--primary-color); margin-right:0.4rem;"></i>
+                                Liens avec le tableau de synthèse E4
+                            </h4>
+                            <div class="rftg-compete-group">
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C1</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
+                                        <div class="rftg-compete-title">Analyser les objectifs et les modalités d'organisation d'un projet</div>
+                                        <p class="rftg-compete-desc">Le projet a nécessité de définir en amont les entités métier, les flux de données et la répartition des responsabilités entre les couches de l'application.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Mettre en place et vérifier les niveaux d'habilitation associés à un service</div>
+                                        <p class="rftg-compete-desc">Le système d'authentification différencie les utilisateurs non authentifiés (redirigés vers /login) des membres du personnel autorisés, via un UserProvider personnalisé et un guard Laravel dédié.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Traiter des demandes concernant les applications</div>
+                                        <p class="rftg-compete-desc">Les modules Clients et Locations répondent directement aux besoins opérationnels du personnel : création, consultation, mise à jour et suppression de données via des formulaires reliés à l'API.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C4</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Travailler en mode projet</span>
+                                        <div class="rftg-compete-title">Recenser et identifier les ressources numériques</div>
+                                        <p class="rftg-compete-desc">Le module inventaire permet de recenser chaque exemplaire physique (DVD) associé à un film et d'en suivre la disponibilité.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C5</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Mettre à disposition des utilisateurs un service informatique</span>
+                                        <div class="rftg-compete-title">Réaliser les tests d'intégration et d'acceptation d'un service</div>
+                                        <p class="rftg-compete-desc">Chaque module a été validé de bout en bout : vérification des appels HTTP, des codes de retour de l'API, des cas d'erreur (connexion échouée, ressource absente) et du comportement des formulaires.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ═══════════════════════════════════════════
+                         TOAD — API REST Spring Boot
+                         ═══════════════════════════════════════════ -->
+                    <article class="rftg-subproject">
+                        <header class="rftg-subproject-head">
+                            <div class="rftg-sub-icon"><i class="fas fa-server"></i></div>
+                            <div class="rftg-sub-headings">
+                                <span class="rftg-sub-kicker">Toad</span>
+                                <h2 class="rftg-sub-title">
+                                    API REST centrale
+                                    <small>Spring Boot — pont central du système</small>
+                                </h2>
+                            </div>
+                        </header>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Présentation</h4>
+                            <p style="font-size:0.98rem; line-height:1.7;">
+                                Application web permettant à des clients de consulter un catalogue de films, gérer un panier, louer des DVDs et laisser des commentaires.
+                                Côté administration, elle expose une API complète pour piloter les stocks, les employés, les magasins et les transactions.
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Stack technique</h4>
+                            <table class="rftg-stack-table">
+                                <tr><td>Backend</td><td>Spring Boot 3.1 (Java 17)</td></tr>
+                                <tr><td>Sécurité</td><td>Spring Security + JWT</td></tr>
+                                <tr><td>Persistance</td><td>Spring Data JPA / Hibernate</td></tr>
+                                <tr><td>Base de données</td><td>MySQL 8</td></tr>
+                                <tr><td>Build</td><td>Maven</td></tr>
+                                <tr><td>Documentation API</td><td>OpenAPI 3.0 (Swagger) + Postman</td></tr>
+                            </table>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Architecture</h4>
+                            <p style="font-size:0.95rem; line-height:1.7;">
+                                L'API REST expose <strong>67 endpoints organisés en 13 controllers</strong>, suivant une architecture en couches classique :
+                                <strong>Controller → Service → Repository → JPA Entity</strong>.
+                                La base de données est dérivée du schéma Sakila (Oracle), enrichie de migrations versionnées (v0.2 → v0.7).
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Fonctionnalités principales</h4>
+                            <ul class="rftg-list">
+                                <li><strong>Authentification</strong> — connexion sécurisée par token JWT (expiration 24h), gestion des rôles client / staff</li>
+                                <li><strong>Catalogue films</strong> — parcours paginé, détail par film, filtrage par acteur, réalisateur et catégorie</li>
+                                <li><strong>Panier &amp; location</strong> — ajout au panier, vérification de disponibilité en stock, validation et suivi</li>
+                                <li><strong>Commentaires</strong> — dépôt d'avis par les clients sur les films</li>
+                                <li><strong>Gestion métier</strong> — CRUD complet : films, acteurs, réalisateurs, catégories, inventaires, clients, employés, magasins</li>
+                                <li><strong>Suivi des stocks</strong> — vérification temps réel de la disponibilité des copies par magasin</li>
+                            </ul>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">Tests &amp; documentation</h4>
+                            <p style="font-size:0.95rem; line-height:1.7;">
+                                La collection Postman et la spécification OpenAPI (<code>Toad.yaml</code>) permettent de tester et documenter l'intégralité des endpoints.
+                            </p>
+                        </div>
+
+                        <div class="rftg-subsection">
+                            <h4 class="rftg-subsection-title">
+                                <i class="fas fa-link" style="color:var(--primary-color); margin-right:0.4rem;"></i>
+                                Liens avec le tableau de synthèse E4
+                            </h4>
+                            <div class="rftg-compete-group">
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C1</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
+                                        <div class="rftg-compete-title">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</div>
+                                        <p class="rftg-compete-desc">L'utilisation de standards reconnus (OpenAPI 3.0, JWT, REST, Maven) reflète une démarche professionnelle alignée sur les pratiques du secteur.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C1</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
+                                        <div class="rftg-compete-title">Gérer des sauvegardes / Gérer le patrimoine informatique</div>
+                                        <p class="rftg-compete-desc">Les migrations SQL versionnées assurent la traçabilité et la reproductibilité de l'évolution du schéma de base de données.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Mettre en place et vérifier les niveaux d'habilitation associés à un service</div>
+                                        <p class="rftg-compete-desc">La mise en œuvre de JWT et de Spring Security garantit que chaque utilisateur accède uniquement aux ressources correspondant à son rôle.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C2</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
+                                        <div class="rftg-compete-title">Traiter des demandes concernant les applications</div>
+                                        <p class="rftg-compete-desc">Développement d'endpoints REST répondant aux besoins fonctionnels (consultation, recherche, détail) et implémentation d'un processus métier complet (panier jusqu'à confirmation de location), avec gestion des états et contrôles de cohérence.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C4</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Travailler en mode projet</span>
+                                        <div class="rftg-compete-title">Recenser et identifier les ressources numériques</div>
+                                        <p class="rftg-compete-desc">L'ensemble des entités métier (films, stocks, clients, magasins…) est modélisé, recensé et administrable via l'API.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C4</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Travailler en mode projet</span>
+                                        <div class="rftg-compete-title">Analyser les objectifs et les modalités d'organisation d'un projet</div>
+                                        <p class="rftg-compete-desc">La structuration du projet (backend modulaire, migrations versionnées, documentation API) témoigne d'une organisation planifiée et d'une répartition claire des responsabilités.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C5</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Mettre à disposition des utilisateurs un service informatique</span>
+                                        <div class="rftg-compete-title">Vérifier les conditions de la continuité d'un service informatique</div>
+                                        <p class="rftg-compete-desc">La vérification de disponibilité avant location évite les incohérences de stock et garantit la fiabilité du service pour l'utilisateur.</p>
+                                    </div>
+                                </div>
+                                <div class="rftg-compete">
+                                    <div class="rftg-compete-icon">C5</div>
+                                    <div class="rftg-compete-body">
+                                        <span class="rftg-compete-label">Mettre à disposition des utilisateurs un service informatique</span>
+                                        <div class="rftg-compete-title">Réaliser les tests d'intégration et d'acceptation d'un service</div>
+                                        <p class="rftg-compete-desc">Les tests Postman couvrent les scénarios nominaux et permettent de valider le comportement de chaque endpoint avant mise en production.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Détail : Assureur -->
+        <section id="projet-assureur-detail" class="project-detail section page-inactive">
+            <div class="container">
+                <a href="#projets" class="back-link lien-detail">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+
+                <div class="project-detail-header">
+                    <h1>Mission professionnelle — Application interne pour un assureur</h1>
+                    <span class="project-category">Expérience professionnelle</span>
+                </div>
+
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <img src="img/assureur_logo.png" alt="Logo du client assureur">
+                    </div>
+
+                    <div class="project-detail-info">
+                        <h2>Présentation</h2>
+                        <p>Mission réalisée au sein de mon entreprise pour le compte d'un client assureur. J'ai contribué au développement complet d'une application interne en intervenant sur les phases de codage, de tests et de documentation.</p>
+
+                        <h3>Détails de la mission</h3>
+                        <ul>
+                            <li><strong>Contexte :</strong> Mission en entreprise pour un client du secteur de l'assurance</li>
+                            <li><strong>Rôle :</strong> Développeur — Participation au développement d'une application interne</li>
+                            <li><strong>Missions principales :</strong> Développement et codage de fonctionnalités, tests et validation de l'application, rédaction de la documentation technique</li>
+                            <li><strong>Technologies utilisées :</strong> Laravel, SQL, PHP, JavaScript</li>
+                        </ul>
+
+                        <h3>Compétences développées</h3>
+                        <p>Travail en équipe dans un contexte client, respect des normes et procédures du secteur de l'assurance, rigueur dans les tests et la documentation, compréhension des enjeux métier d'un assureur, développement avec le framework Laravel.</p>
+
+                        <h3>Liens avec le tableau de synthèse E4</h3>
+                        <ul>
+                            <li><strong>C3 — Développer la présence en ligne :</strong> Participer à l'évolution d'un site Web exploitant les données de l'organisation — L'application interne consomme et exploite les données métier de l'assureur exposées via l'API, pour les restituer à travers une interface web structurée.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Détail : MTCongés -->
+        <section id="projet-mtconges-detail" class="project-detail section page-inactive">
+            <div class="container">
+                <a href="#projets" class="back-link lien-detail">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+
+                <div class="project-detail-header">
+                    <h1>MTCongés — Application de gestion des congés</h1>
+                    <span class="project-category">Application Java • BTS SIO</span>
+                </div>
+
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <img src="img/mtconges_mainpage_calendrier.png" alt="Interface principale du calendrier de MTCongés">
+                    </div>
+
+                    <div class="project-detail-info">
+                        <h2>Présentation</h2>
+                        <p>Application de gestion des congés développée dans le cadre d'un projet BTS SIO SLAM. Conçue en Java 17 avec une interface Swing et une base de données MySQL, elle suit une architecture MVC structurée permettant une séparation claire entre logique métier, interface et persistance des données.</p>
+
+                        <h3>Objectifs du projet</h3>
+                        <p>Créer une solution complète permettant aux employés de demander des congés, aux responsables de les valider et aux administrateurs de gérer les comptes utilisateurs, le tout dans un environnement sécurisé et conforme aux bonnes pratiques.</p>
+
+                        <h3>Fonctionnalités principales</h3>
+                        <ul>
+                            <li><strong>Authentification sécurisée :</strong> Connexion avec verrouillage automatique, réinitialisation de mot de passe, contrôles de session</li>
+                            <li><strong>Gestion des rôles :</strong> Admin (gestion utilisateurs), Responsable (validation demandes), Employé (dépôt et suivi)</li>
+                            <li><strong>Architecture MVC :</strong> Modèle (POJO + DAO), Vue (Swing adaptative), Contrôleur (logique métier)</li>
+                        </ul>
+
+                        <h3>Aspects techniques et sécurité</h3>
+                        <ul>
+                            <li>Protection contre injections SQL</li>
+                            <li>Durée de session limitée</li>
+                            <li>Vérifications côté client et serveur</li>
+                            <li>Système de logging complet pour traçage et débogage</li>
+                            <li>Conformité RGPD</li>
+                        </ul>
+
+                        <h3>Technologies utilisées</h3>
+                        <ul>
+                            <li><strong>Langage :</strong> Java 17</li>
+                            <li><strong>Interface :</strong> Java Swing</li>
+                            <li><strong>Base de données :</strong> MySQL</li>
+                            <li><strong>Architecture :</strong> MVC avec DAO et POJO</li>
+                            <li><strong>Sécurité :</strong> Authentification, RGPD, logging</li>
+                        </ul>
+
+                        <h3>Compétences développées</h3>
+                        <p>Développement Java 17 &amp; Swing • Architecture logicielle MVC • Conception de base de données MySQL • DAO &amp; POJO • Sécurité, authentification, RGPD • Logging, débogage et gestion des erreurs • Gestion des rôles et permissions</p>
+
+                        <div class="project-detail-screenshots">
+                            <h3>Captures d'écran</h3>
+                            <div class="screenshots-grid">
+                                <img src="img/mtconges_login-screen.png" alt="Écran de connexion de MTCongés">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Camille Marsac. Tous droits réservés.</p>
+            <p>Étudiant en BTS SIO | Développeur Web</p>
+            <div class="footer-buttons">
+                <a href="cv/CV_Camille_Marsac.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+                <a href="https://mtb849.sharepoint.com/:x:/r/sites/3-BTSSIOPromo2024-2026-LivretApprentissageCamilleMarsac/Documents%20partages/Livret%20Apprentissage%20Camille%20Marsac/6-%20Annexe%206-1%20-%20Tableau%20de%20synth%C3%A8se%20-%20Epreuve%20E4%20-%20BTS%20SIO%202024.xlsx?d=wdfd3e6232f2f4662a221cf7059a9c595&csf=1&web=1&e=X2Dej0" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-excel"></i> Tableau de synthèse E4
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/transitions.js"></script>
+    <script>
+        /* =============================================
+           Navigation entre projets et leurs détails
+           ============================================= */
+
+        // Toutes les sections de cette page
+        const sectionsProjets = document.querySelectorAll('main > section');
+
+        // Afficher la section correspondant au hash (ou la liste par défaut)
+        function afficherSectionParHash() {
+            const hash = window.location.hash || '#projets';
+            sectionsProjets.forEach(section => {
+                if ('#' + section.id === hash) {
+                    section.classList.remove('page-inactive');
+                    section.classList.add('page-active');
+                } else {
+                    section.classList.remove('page-active');
+                    section.classList.add('page-inactive');
+                }
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Gestion des clics sur les liens internes (détail et retour)
+        document.querySelectorAll('.lien-detail').forEach(lien => {
+            lien.addEventListener('click', (e) => {
+                e.preventDefault();
+                const hash = lien.getAttribute('href');
+                history.pushState(null, '', hash);
+                afficherSectionParHash();
+            });
+        });
+
+        // Navigation via le bouton précédent/suivant du navigateur
+        window.addEventListener('hashchange', afficherSectionParHash);
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', afficherSectionParHash);
+    </script>
+</body>
+</html>
