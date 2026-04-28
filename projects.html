@@ -1,9 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets — Camille Marsac</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://camille-msc.github.io/portfolio/projects.html">
+    <meta property="og:title" content="Projets - Camille Marsac">
+    <meta property="og:description" content="Projets réalisés par Camille Marsac : RFTG, MTCongés, DataConverter, Expense Tracker et plus encore.">
+    <meta property="og:image" content="https://camille-msc.github.io/portfolio/img/profile.jpg">
+    <title>Projets - Camille Marsac</title>
     <!-- Police professionnelle -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +43,9 @@
                 <li class="nav-item">
                     <a href="veille.html" class="nav-link">Veille Technologique</a>
                 </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
                 <i class="fas fa-moon"></i>
@@ -55,6 +65,8 @@
                 <div class="section-title">
                     <h2>Mes Projets</h2>
                 </div>
+                <!-- Projets réalisés -->
+                <h3 class="projects-group-title">Projets réalisés</h3>
                 <div class="projects-container">
                     <!-- Projet RFTG -->
                     <div class="project-card">
@@ -107,10 +119,9 @@
                         </div>
                     </div>
 
-
                     <!-- Projet DataConverter -->
                     <div class="project-card">
-                        <img src="img/projet-dataconverter.jpg" alt="DataConverter — bibliothèque Java de conversion de formats" class="project-img">
+                        <img src="img/projet-dataconverter.jpg" alt="DataConverter - bibliothèque Java de conversion de formats" class="project-img">
                         <div class="project-content">
                             <span class="project-category">Bibliothèque Java</span>
                             <h3 class="project-title">DataConverter</h3>
@@ -119,23 +130,6 @@
                             </p>
                             <div class="project-links">
                                 <a href="#projet-dataconverter-detail" class="project-link lien-detail">
-                                    En savoir plus <i class="fas fa-info-circle"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projet Expense Tracker -->
-                    <div class="project-card">
-                        <img src="img/projet-expense-tracker.jpg" alt="Expense Tracker — application de suivi de dépenses" class="project-img">
-                        <div class="project-content">
-                            <span class="project-category">Application Web Full-Stack · En cours</span>
-                            <h3 class="project-title">Expense Tracker</h3>
-                            <p class="project-description">
-                                Application web de suivi de dépenses personnelles avec tableau de bord interactif, budgets par catégorie et alertes de dépassement.
-                            </p>
-                            <div class="project-links">
-                                <a href="#projet-expense-tracker-detail" class="project-link lien-detail">
                                     En savoir plus <i class="fas fa-info-circle"></i>
                                 </a>
                             </div>
@@ -162,7 +156,6 @@
                         </div>
                     </div>
 
-
                     <!-- Projet Portfolio -->
                     <div class="project-card">
                         <img src="img/projet-portfolio.jpg" alt="Portfolio personnel de Camille Marsac" class="project-img">
@@ -178,6 +171,29 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- En cours / À venir -->
+                <h3 class="projects-group-title projects-group-title--wip">
+                    <span class="wip-dot"></span> En cours / À venir
+                </h3>
+                <div class="projects-container projects-container--wip">
+                    <!-- Projet Expense Tracker -->
+                    <div class="project-card">
+                        <img src="img/projet-expense-tracker.jpg" alt="Expense Tracker - application de suivi de dépenses" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Application Web Full-Stack · En cours</span>
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <p class="project-description">
+                                Application web de suivi de dépenses personnelles avec tableau de bord interactif, budgets par catégorie et alertes de dépassement.
+                            </p>
+                            <div class="project-links">
+                                <a href="#projet-expense-tracker-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -190,36 +206,122 @@
 
                 <div class="project-detail-header">
                     <h1>Site web pour une podologue</h1>
-                    <span class="project-category">Site Web Professionnel</span>
+                    <span class="project-category">Développement Web · Déploiement · Référencement</span>
                 </div>
 
-                <div class="project-detail-content">
-                    <div class="project-detail-image">
-                        <img src="img/projet-podologue.jpg" alt="Capture d'écran du site web de podologie">
-                    </div>
-
-                    <div class="project-detail-info">
-                        <h2>Présentation du projet</h2>
-                        <p>Site vitrine professionnel développé pour une podologue afin de créer une présence en ligne professionnelle et attirer de nouveaux patients.</p>
-
-                        <h3>Détails du projet</h3>
-                        <ul>
-                            <li><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript. Hébergeur : O2Switch, FileZilla pour la mise en service sur l'hébergeur</li>
-                            <li><strong>Durée :</strong> 2 semaines</li>
-                            <li><strong>Fonctionnalités :</strong> Site vitrine responsive, présentation des services, HTTPS</li>
-                            <li><strong>Objectifs :</strong> Créer une présence en ligne professionnelle pour attirer de nouveaux patients. Accessible sur la première page de recherche.</li>
-                        </ul>
-
-                        <h3>Défis relevés</h3>
-                        <p>Adapter le design aux besoins spécifiques du secteur médical tout en conservant une interface moderne et accessible.</p>
-
-                        <div class="project-detail-links">
-                            <a href="https://podologue-argentan.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i> Voir le site
-                            </a>
+                <!-- ─── INTRO ─── -->
+                <div class="rftg-intro">
+                    <p>
+                        L'objectif de ce projet était de créer un <strong>site vitrine professionnel</strong> pour une podologue à Argentan, afin d'attirer de la clientèle et d'établir une présence en ligne.
+                        Ce projet m'a surtout permis de m'entraîner sur la mise en ligne concrète d'une application web : choix et configuration d'un hébergeur, transfert des fichiers par FTP, sécurisation en HTTPS et travail sur le référencement naturel.
+                    </p>
+                    <div class="rftg-meta">
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Hébergeur initial</span>
+                            <span class="rftg-meta-value">O2Switch</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Hébergeur actuel</span>
+                            <span class="rftg-meta-value">Hostinger</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Transfert FTP</span>
+                            <span class="rftg-meta-value">FileZilla</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Résultat</span>
+                            <span class="rftg-meta-value">1ère page Google</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- ═══ DÉPLOIEMENT ═══ -->
+                <article class="rftg-subproject">
+                    <header class="rftg-subproject-head">
+                        <div class="rftg-sub-icon"><i class="fas fa-server"></i></div>
+                        <div class="rftg-sub-headings">
+                            <span class="rftg-sub-kicker">Mise en production</span>
+                            <h2 class="rftg-sub-title">Déploiement et hébergement</h2>
+                        </div>
+                    </header>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title">Mise en ligne avec FileZilla</h4>
+                        <p style="font-size:0.98rem; line-height:1.7;">
+                            Le déploiement a été réalisé via <strong>FileZilla</strong> en FTP/FTPS : connexion au serveur distant, organisation des répertoires et transfert des fichiers statiques vers le dossier public de l'hébergeur.
+                            C'est ma première mise en production réelle d'un projet web, ce qui m'a permis de comprendre concrètement le cycle développement → hébergement → production.
+                        </p>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title">O2Switch puis Hostinger</h4>
+                        <ul class="rftg-list">
+                            <li>Départ sur <strong>O2Switch</strong> : découverte du panneau cPanel, gestion des DNS et configuration du nom de domaine</li>
+                            <li>Migration vers <strong>Hostinger</strong> : comparaison des offres, export et réimport des fichiers, mise à jour des enregistrements DNS</li>
+                            <li>Compréhension des différences de configuration entre hébergeurs mutualisés</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title">Sécurisation HTTPS</h4>
+                        <ul class="rftg-list">
+                            <li>Activation et configuration du certificat SSL/TLS (Let's Encrypt) via le panneau d'administration</li>
+                            <li>Mise en place de la redirection HTTP → HTTPS pour garantir la sécurité des visiteurs</li>
+                            <li>Vérification de la validité du certificat et du cadenas dans le navigateur</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- ═══ RÉFÉRENCEMENT ═══ -->
+                <article class="rftg-subproject">
+                    <header class="rftg-subproject-head">
+                        <div class="rftg-sub-icon"><i class="fas fa-search"></i></div>
+                        <div class="rftg-sub-headings">
+                            <span class="rftg-sub-kicker">Référencement</span>
+                            <h2 class="rftg-sub-title">SEO et visibilité Google</h2>
+                        </div>
+                    </header>
+
+                    <div class="rftg-subsection">
+                        <p style="font-size:0.98rem; line-height:1.7;">
+                            L'un des objectifs principaux était que le site soit trouvable par de futurs patients. J'ai travaillé le référencement naturel pour positionner le site sur la première page de résultats Google sur les requêtes locales.
+                        </p>
+                        <ul class="rftg-list">
+                            <li>Rédaction de balises <code>&lt;title&gt;</code> et <code>&lt;meta description&gt;</code> ciblant les mots-clés pertinents (podologue, Argentan, soins des pieds…)</li>
+                            <li>Structure sémantique HTML correcte (titres <code>h1</code>/<code>h2</code>, balises <code>alt</code> sur les images)</li>
+                            <li>Déclaration et indexation via <strong>Google Search Console</strong></li>
+                            <li>Ajout de l'établissement sur <strong>Google Maps / Google Business</strong> pour le référencement local</li>
+                            <li>Résultat : site accessible en <strong>première page de recherche</strong> sur les requêtes locales ciblées</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- ═══ RÉPONSE AU BESOIN CLIENT ═══ -->
+                <article class="rftg-subproject">
+                    <header class="rftg-subproject-head">
+                        <div class="rftg-sub-icon"><i class="fas fa-user-check"></i></div>
+                        <div class="rftg-sub-headings">
+                            <span class="rftg-sub-kicker">Relation client</span>
+                            <h2 class="rftg-sub-title">Répondre aux besoins du client</h2>
+                        </div>
+                    </header>
+
+                    <div class="rftg-subsection">
+                        <ul class="rftg-list">
+                            <li>Recueil des besoins : présentation des services, informations de contact, horaires et accès</li>
+                            <li>Itérations sur le design et le contenu en fonction des retours du client</li>
+                            <li>Livraison d'un site responsive, accessible sur mobile comme sur desktop</li>
+                            <li>Accompagnement post-mise en ligne : explication de la gestion du domaine et de l'hébergement</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-detail-links" style="margin-top:1.5rem;">
+                        <a href="https://podologue-argentan.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Voir le site
+                        </a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -232,7 +334,7 @@
 
                 <div class="project-detail-header">
                     <h1>RFTG - Raised From The Graveyard</h1>
-                    <span class="project-category">Projet Full-Stack • BTS SIO 2024–2026</span>
+                    <span class="project-category">Projet Full-Stack • BTS SIO 2024-2026</span>
                 </div>
 
                 <div class="project-detail-content">
@@ -248,7 +350,7 @@
                         <div class="rftg-meta">
                             <div class="rftg-meta-item">
                                 <span class="rftg-meta-label">Cadre</span>
-                                <span class="rftg-meta-value">BTS SIO SLAM · 2024–2026</span>
+                                <span class="rftg-meta-value">BTS SIO SLAM · 2024-2026</span>
                             </div>
                             <div class="rftg-meta-item">
                                 <span class="rftg-meta-label">Base de données</span>
@@ -287,7 +389,7 @@
 
 
                     <!-- ═══════════════════════════════════════════
-                         LUIGI — Application mobile Android
+                         LUIGI - Application mobile Android
                          ═══════════════════════════════════════════ -->
                     <article class="rftg-subproject">
                         <header class="rftg-subproject-head">
@@ -423,7 +525,7 @@
 
 
                     <!-- ═══════════════════════════════════════════
-                         MARIO (CMA) — Web de gestion vidéoclub
+                         MARIO (CMA) - Web de gestion vidéoclub
                          ═══════════════════════════════════════════ -->
                     <article class="rftg-subproject">
                         <header class="rftg-subproject-head">
@@ -438,7 +540,7 @@
 
                         <div class="project-detail-screenshots" style="margin-top:0; margin-bottom:1.75rem;">
                             <div class="rftg-screens">
-                                <img src="img/Mario_RFTG.png" alt="Interface de l'application web Mario — CMA">
+                                <img src="img/Mario_RFTG.png" alt="Interface de l'application web Mario - CMA">
                             </div>
                         </div>
 
@@ -548,7 +650,7 @@
 
 
                     <!-- ═══════════════════════════════════════════
-                         TOAD — API REST Spring Boot
+                         TOAD - API REST Spring Boot
                          ═══════════════════════════════════════════ -->
                     <article class="rftg-subproject">
                         <header class="rftg-subproject-head">
@@ -692,7 +794,7 @@
 
                 <div class="project-detail-header">
                     <h1>Mission professionnelle - Assureur</h1>
-                    <span class="project-category">Expérience professionnelle · BTS SIO 2024–2026</span>
+                    <span class="project-category">Expérience professionnelle · BTS SIO 2024-2026</span>
                 </div>
 
                 <!-- ─── INTRO ─── -->
@@ -740,7 +842,7 @@
 
 
                 <!-- ═══════════════════════════════════
-                     MISSION 1 — Correctifs d'incidents
+                     MISSION 1 - Correctifs d'incidents
                      ═══════════════════════════════════ -->
                 <article class="rftg-subproject">
                     <header class="rftg-subproject-head">
@@ -763,10 +865,10 @@
                     <div class="rftg-subsection">
                         <h4 class="rftg-subsection-title">Interventions réalisées</h4>
                         <ul class="rftg-list">
-                            <li><strong>Analyse des incidents</strong> — lecture des rapports, reproduction du bug en environnement de développement</li>
-                            <li><strong>Modification du code</strong> — correctifs ciblés dans les contrôleurs, modèles et vues Laravel</li>
-                            <li><strong>Rédaction de la documentation</strong> — description du problème, de la cause racine et de la solution appliquée</li>
-                            <li><strong>Cahiers de tests</strong> — scénarios de validation couvrant les cas nominaux et les régressions</li>
+                            <li><strong>Analyse des incidents</strong> - lecture des rapports, reproduction du bug en environnement de développement</li>
+                            <li><strong>Modification du code</strong> - correctifs ciblés dans les contrôleurs, modèles et vues Laravel</li>
+                            <li><strong>Rédaction de la documentation</strong> - description du problème, de la cause racine et de la solution appliquée</li>
+                            <li><strong>Cahiers de tests</strong> - scénarios de validation couvrant les cas nominaux et les régressions</li>
                         </ul>
                     </div>
 
@@ -783,7 +885,7 @@
 
 
                 <!-- ═══════════════════════════════════
-                     MISSION 2 — Migration Laravel
+                     MISSION 2 - Migration Laravel
                      ═══════════════════════════════════ -->
                 <article class="rftg-subproject">
                     <header class="rftg-subproject-head">
@@ -807,11 +909,11 @@
                     <div class="rftg-subsection">
                         <h4 class="rftg-subsection-title">Interventions réalisées</h4>
                         <ul class="rftg-list">
-                            <li><strong>Analyse des breaking changes</strong> — identification des incompatibilités entre l'ancienne et la nouvelle version de Laravel</li>
-                            <li><strong>Adaptation du code</strong> — mise à jour des dépendances, refactoring des parties concernées par les changements d'API du framework</li>
-                            <li><strong>Correctifs de compatibilité</strong> — résolution des erreurs apparues lors de la montée en version</li>
-                            <li><strong>Rédaction de la documentation</strong> — guide de migration, description des modifications apportées</li>
-                            <li><strong>Cahiers de tests</strong> — vérification du comportement de l'application après migration (fonctionnalités, sécurité, intégrité des données)</li>
+                            <li><strong>Analyse des breaking changes</strong> - identification des incompatibilités entre l'ancienne et la nouvelle version de Laravel</li>
+                            <li><strong>Adaptation du code</strong> - mise à jour des dépendances, refactoring des parties concernées par les changements d'API du framework</li>
+                            <li><strong>Correctifs de compatibilité</strong> - résolution des erreurs apparues lors de la montée en version</li>
+                            <li><strong>Rédaction de la documentation</strong> - guide de migration, description des modifications apportées</li>
+                            <li><strong>Cahiers de tests</strong> - vérification du comportement de l'application après migration (fonctionnalités, sécurité, intégrité des données)</li>
                         </ul>
                     </div>
 
@@ -859,7 +961,7 @@
                                 <div class="rftg-compete-body">
                                     <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
                                     <div class="rftg-compete-title">Traiter des demandes concernant les applications</div>
-                                    <p class="rftg-compete-desc">Analyse des causes racines, modification ciblée du code PHP / Laravel et validation des correctifs — directement en réponse aux incidents remontés par le client.</p>
+                                    <p class="rftg-compete-desc">Analyse des causes racines, modification ciblée du code PHP / Laravel et validation des correctifs - directement en réponse aux incidents remontés par le client.</p>
                                 </div>
                             </div>
                             <div class="rftg-compete">
@@ -967,7 +1069,7 @@
                                             <div class="rftg-compete-body">
                                                 <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
                                                 <div class="rftg-compete-title">Mettre en place et vérifier les niveaux d'habilitation associés à un service</div>
-                                                <p class="rftg-compete-desc">Système de rôles (Super-Admin, Admin, Responsable, Employé) avec permissions distinctes — table <code>role</code>, <code>RoleDao.java</code>, <code>AdminController.java</code>.</p>
+                                                <p class="rftg-compete-desc">Système de rôles (Super-Admin, Admin, Responsable, Employé) avec permissions distinctes - table <code>role</code>, <code>RoleDao.java</code>, <code>AdminController.java</code>.</p>
                                             </div>
                                         </div>
                                         <div class="rftg-compete">
@@ -983,7 +1085,7 @@
                                             <div class="rftg-compete-body">
                                                 <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
                                                 <div class="rftg-compete-title">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</div>
-                                                <p class="rftg-compete-desc">Architecture MVC, hachage BCrypt des mots de passe, JDBC, Maven — standards reconnus en entreprise.</p>
+                                                <p class="rftg-compete-desc">Architecture MVC, hachage BCrypt des mots de passe, JDBC, Maven - standards reconnus en entreprise.</p>
                                             </div>
                                         </div>
                                         <div class="rftg-compete">
@@ -1022,7 +1124,7 @@
                                             <div class="rftg-compete-icon">C2</div>
                                             <div class="rftg-compete-body">
                                                 <span class="rftg-compete-label">Répondre aux incidents et aux demandes</span>
-                                                <div class="rftg-compete-title">Traiter des demandes de support — Système de notification</div>
+                                                <div class="rftg-compete-title">Traiter des demandes de support - Système de notification</div>
                                                 <p class="rftg-compete-desc">Suivi des réponses aux demandes via <code>NotificationDao.java</code> (état non-ouverte / lue, titre, contenu).</p>
                                             </div>
                                         </div>
@@ -1047,7 +1149,7 @@
                                             <div class="rftg-compete-body">
                                                 <span class="rftg-compete-label">Travailler en mode projet</span>
                                                 <div class="rftg-compete-title">Recenser et identifier les ressources numériques</div>
-                                                <p class="rftg-compete-desc">Suivi du solde de congés (<code>NombreCongeRestant</code>, <code>NombreCongesParAn</code>) — indicateur chiffré exploitable dans le tableau de bord.</p>
+                                                <p class="rftg-compete-desc">Suivi du solde de congés (<code>NombreCongeRestant</code>, <code>NombreCongesParAn</code>) - indicateur chiffré exploitable dans le tableau de bord.</p>
                                             </div>
                                         </div>
                                         <div class="rftg-compete">
@@ -1128,7 +1230,7 @@
                 </a>
 
                 <div class="project-detail-header">
-                    <h1>DataConverter — Bibliothèque de conversion multi-formats</h1>
+                    <h1>DataConverter - Bibliothèque de conversion multi-formats</h1>
                     <span class="project-category">Bibliothèque Java · Projet Personnel</span>
                 </div>
 
@@ -1167,7 +1269,7 @@
                         <span class="rftg-module-tag">Architecture</span>
                         <h3 class="rftg-module-title">Hub-and-Spoke</h3>
                         <p class="rftg-module-role">Représentation intermédiaire</p>
-                        <p class="rftg-module-desc">Tous les formats passent par un <code>Map&lt;String,Object&gt;</code> central — 12+ conversions bidirectionnelles sans duplication de logique.</p>
+                        <p class="rftg-module-desc">Tous les formats passent par un <code>Map&lt;String,Object&gt;</code> central - 12+ conversions bidirectionnelles sans duplication de logique.</p>
                     </div>
                     <div class="rftg-module">
                         <span class="rftg-module-tag">Extensibilité</span>
@@ -1260,22 +1362,22 @@
                     <div class="rftg-subsection">
                         <h4 class="rftg-subsection-title">Fonctionnalités principales</h4>
                         <ul class="rftg-list">
-                            <li><strong>Conversion multi-formats</strong> — 4 formats supportés, toutes les combinaisons sont possibles (12+ chemins bidirectionnels)</li>
-                            <li><strong>Préservation des types</strong> — String, Integer, Double, Boolean conservés à travers toutes les conversions</li>
-                            <li><strong>Structures imbriquées</strong> — objets et tableaux JSON/XML préservés via notation pointée en CSV</li>
-                            <li><strong>Tests round-trip</strong> — vérification que JSON → CSV → JSON donne un résultat identique à l'original</li>
-                            <li><strong>FileComparator</strong> — diff caractère par caractère entre deux fichiers</li>
-                            <li><strong>MapComparator</strong> — comparaison structurelle profonde de deux <code>Map&lt;String, Object&gt;</code></li>
+                            <li><strong>Conversion multi-formats</strong> - 4 formats supportés, toutes les combinaisons sont possibles (12+ chemins bidirectionnels)</li>
+                            <li><strong>Préservation des types</strong> - String, Integer, Double, Boolean conservés à travers toutes les conversions</li>
+                            <li><strong>Structures imbriquées</strong> - objets et tableaux JSON/XML préservés via notation pointée en CSV</li>
+                            <li><strong>Tests round-trip</strong> - vérification que JSON → CSV → JSON donne un résultat identique à l'original</li>
+                            <li><strong>FileComparator</strong> - diff caractère par caractère entre deux fichiers</li>
+                            <li><strong>MapComparator</strong> - comparaison structurelle profonde de deux <code>Map&lt;String, Object&gt;</code></li>
                         </ul>
                     </div>
 
                     <div class="rftg-subsection">
                         <h4 class="rftg-subsection-title">Points forts algorithmiques</h4>
                         <ul class="rftg-list">
-                            <li><strong>Interfaces Importer / Exporter</strong> — design extensible : ajouter un format = deux nouvelles classes, zéro modification du code existant</li>
-                            <li><strong>Algorithme CSV 3 passes</strong> — reconstruction fidèle de structures imbriquées arbitrairement profondes</li>
-                            <li><strong>Sélection algorithmique adaptative</strong> — comparateur de fichiers : DP O(n×m) pour petits fichiers, linéaire O(n+m) pour grands fichiers</li>
-                            <li><strong>Javadoc complet</strong> — documentation bilingue FR/EN avec exemples d'utilisation et notes de conception</li>
+                            <li><strong>Interfaces Importer / Exporter</strong> - design extensible : ajouter un format = deux nouvelles classes, zéro modification du code existant</li>
+                            <li><strong>Algorithme CSV 3 passes</strong> - reconstruction fidèle de structures imbriquées arbitrairement profondes</li>
+                            <li><strong>Sélection algorithmique adaptative</strong> - comparateur de fichiers : DP O(n×m) pour petits fichiers, linéaire O(n+m) pour grands fichiers</li>
+                            <li><strong>Javadoc complet</strong> - documentation bilingue FR/EN avec exemples d'utilisation et notes de conception</li>
                         </ul>
                     </div>
 
@@ -1313,7 +1415,7 @@
                                 <div class="rftg-compete-body">
                                     <span class="rftg-compete-label">Gérer le patrimoine informatique</span>
                                     <div class="rftg-compete-title">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</div>
-                                    <p class="rftg-compete-desc">Respect des standards reconnus : JSON RFC 8259, Open XML OOXML pour Excel, W3C XML — ainsi que les conventions Maven et les pratiques Java de l'écosystème professionnel.</p>
+                                    <p class="rftg-compete-desc">Respect des standards reconnus : JSON RFC 8259, Open XML OOXML pour Excel, W3C XML - ainsi que les conventions Maven et les pratiques Java de l'écosystème professionnel.</p>
                                 </div>
                             </div>
                             <div class="rftg-compete">
@@ -1361,7 +1463,7 @@
                                 <div class="rftg-compete-body">
                                     <span class="rftg-compete-label">Organiser son développement professionnel</span>
                                     <div class="rftg-compete-title">Mettre en œuvre des outils et services de veille informationnelle</div>
-                                    <p class="rftg-compete-desc">Sélection et intégration de bibliothèques reconnues de l'écosystème Java : Apache POI (Excel), Google Gson et Jackson (JSON) — en évaluant leurs avantages respectifs.</p>
+                                    <p class="rftg-compete-desc">Sélection et intégration de bibliothèques reconnues de l'écosystème Java : Apache POI (Excel), Google Gson et Jackson (JSON) - en évaluant leurs avantages respectifs.</p>
                                 </div>
                             </div>
                             <div class="rftg-compete">
@@ -1369,7 +1471,7 @@
                                 <div class="rftg-compete-body">
                                     <span class="rftg-compete-label">Organiser son développement professionnel</span>
                                     <div class="rftg-compete-title">Mettre en place son environnement d'apprentissage personnel</div>
-                                    <p class="rftg-compete-desc">Configuration d'un environnement de développement Java complet : JDK 17, Maven, JUnit Jupiter 5 — avec maîtrise des outils de build et de test professionnels.</p>
+                                    <p class="rftg-compete-desc">Configuration d'un environnement de développement Java complet : JDK 17, Maven, JUnit Jupiter 5 - avec maîtrise des outils de build et de test professionnels.</p>
                                 </div>
                             </div>
                         </div>
@@ -1425,7 +1527,7 @@
                         <span class="rftg-module-tag">Sécurité</span>
                         <h3 class="rftg-module-title">Authentification</h3>
                         <p class="rftg-module-role">JWT + bcrypt</p>
-                        <p class="rftg-module-desc">Inscription et connexion sécurisées — chaque utilisateur n'accède qu'à ses propres données.</p>
+                        <p class="rftg-module-desc">Inscription et connexion sécurisées - chaque utilisateur n'accède qu'à ses propres données.</p>
                     </div>
                     <div class="rftg-module">
                         <span class="rftg-module-tag">Gestion</span>
@@ -1558,8 +1660,8 @@
                 <a href="ressources/CV_Camille_Marsac.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-download"></i> Télécharger mon CV
                 </a>
-                <a href="ressources/Tableau_Synthese_E4.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-pdf"></i> Tableau de synthèse E4
+                <a href="ressources/Tableau_Synthese_E5.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-pdf"></i> Tableau de synthèse E5
                 </a>
             </div>
         </div>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://camille-msc.github.io/portfolio/contact.html">
+    <meta property="og:title" content="Contact - Camille Marsac">
+    <meta property="og:description" content="Contactez Camille Marsac pour toute proposition de collaboration ou de stage.">
+    <meta property="og:image" content="https://camille-msc.github.io/portfolio/img/profile.jpg">
+    <title>Contact - Camille Marsac</title>
+    <!-- Police professionnelle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=5.0">
+    <link rel="stylesheet" href="css/refresh.css?v=2.0">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Camille<span>Marsac</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="competences.html" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille Technologique</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Me contacter</h2>
+                </div>
+
+                <div class="contact-layout">
+
+                    <!-- Infos de contact -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Contact</h3>
+                        <p class="contact-info-text">
+                            N'hésitez pas à me contacter pour toute proposition de stage ou d'alternance.
+                        </p>
+
+                        <ul class="contact-links">
+                            <li>
+                                <a href="https://github.com/Camille-msc" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                                    <span class="contact-link-icon"><i class="fab fa-github"></i></span>
+                                    <span>github.com/Camille-msc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/camille-marsac-b8574a3b9/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                                    <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+                                    <span>linkedin.com/in/camille-marsac</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Formulaire -->
+                    <!-- Remplacez VOTRE_ID par l'identifiant de votre formulaire Formspree (formspree.io) -->
+                    <form class="contact-form" action="https://formspree.io/f/mgorgzoj" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Nom</label>
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                class="form-input"
+                                placeholder="Votre nom"
+                                required
+                                autocomplete="name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email</label>
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                class="form-input"
+                                placeholder="votre@email.com"
+                                required
+                                autocomplete="email"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Sujet</label>
+                            <input
+                                type="text"
+                                id="contact-subject"
+                                name="subject"
+                                class="form-input"
+                                placeholder="Objet de votre message"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                class="form-input form-textarea"
+                                placeholder="Votre message..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn contact-submit">
+                            Envoyer <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Camille Marsac. Tous droits réservés.</p>
+            <p>Étudiant en BTS SIO | Développeur Web</p>
+            <div class="footer-buttons">
+                <a href="ressources/CV_Camille_Marsac.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+                <a href="ressources/Tableau_Synthese_E5.pdf" class="btn foot-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-pdf"></i> Tableau de synthèse E5
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

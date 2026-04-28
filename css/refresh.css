@@ -1868,3 +1868,389 @@ body.dark-mode .veille-enjeu-link {
     display: block;
     max-height: 480px;
 }
+
+/* ============================================
+   PROJECTS — groupes réalisés / en cours
+   ============================================ */
+.projects-group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    margin: 3rem 0 1.5rem;
+}
+
+.projects-group-title--wip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+}
+
+.wip-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.projects-container--wip {
+    opacity: 0.92;
+}
+
+/* ============================================
+   EXPÉRIENCES — timeline verticale (about.html)
+   ============================================ */
+.exp-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.exp-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--border-color);
+    border-radius: 2px;
+}
+
+.exp-item {
+    position: relative;
+    padding-bottom: 1.75rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.exp-item:last-child {
+    padding-bottom: 0;
+}
+
+.exp-dot {
+    position: absolute;
+    left: -1.85rem;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid var(--bg-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+    flex-shrink: 0;
+}
+
+.exp-card {
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.4rem;
+    flex: 1;
+    box-shadow: var(--shadow-xs);
+}
+
+.exp-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.exp-title {
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.exp-date {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.exp-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.exp-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* ============================================
+   LANGUES — barres de niveau (competences.html)
+   ============================================ */
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.lang-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.4rem;
+    box-shadow: var(--shadow-xs);
+}
+
+.lang-flag {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.lang-info {
+    flex: 1;
+}
+
+.lang-name {
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.2rem;
+}
+
+.lang-level-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.lang-bar {
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.lang-bar-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 99px;
+    transition: width 0.6s ease;
+}
+
+/* ============================================
+   PAGE CONTACT
+   ============================================ */
+.contact-section {
+    min-height: calc(100vh - 72px);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Écrase le bleu de style.css */
+.contact-info {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+    padding: 2rem;
+}
+
+.contact-info h3::after {
+    background-color: var(--primary-color);
+}
+
+.contact-info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.contact-info-text {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-link-item:hover {
+    color: var(--primary-color);
+}
+
+.contact-link-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-sm);
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--text-color);
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    box-shadow: var(--shadow-xs);
+}
+
+.form-input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.form-input::placeholder {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-submit {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.contact-submit:hover {
+    background-color: var(--dark-color);
+}
+
+/* ============================================
+   PAGE 404
+   ============================================ */
+.not-found-section {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+.not-found-content {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.not-found-code {
+    font-size: clamp(6rem, 18vw, 10rem);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.not-found-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.not-found-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.not-found-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ============================================
+   RESPONSIVE — nouveaux composants
+   ============================================ */
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+
+    .lang-grid {
+        grid-template-columns: 1fr;
+    }
+}
