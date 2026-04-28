@@ -1846,3 +1846,25 @@ body.dark-mode .veille-enjeu-link {
     .dc-hub-node { font-size: 0.72rem; padding: 0.5rem 0.5rem; }
     .dc-format-node { font-size: 0.78rem; padding: 0.4rem 0.6rem; }
 }
+
+/* ── Lecteur vidéo RFTG ─────────────────────────────────── */
+.rftg-video-section {
+    padding: 0;
+    border: none !important;
+    background: none !important;
+}
+
+.rftg-video-wrap {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow-soft);
+    margin-top: 0.75rem;
+}
+
+.rftg-video-wrap video {
+    width: 100%;
+    display: block;
+    max-height: 480px;
+}

@@ -112,13 +112,30 @@
                     <div class="project-card">
                         <img src="img/projet-dataconverter.jpg" alt="DataConverter — bibliothèque Java de conversion de formats" class="project-img">
                         <div class="project-content">
-                            <span class="project-category">Bibliothèque Java · Projet Personnel</span>
+                            <span class="project-category">Bibliothèque Java</span>
                             <h3 class="project-title">DataConverter</h3>
                             <p class="project-description">
                                 Bibliothèque utilitaire Java permettant de convertir des données.
                             </p>
                             <div class="project-links">
                                 <a href="#projet-dataconverter-detail" class="project-link lien-detail">
+                                    En savoir plus <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet Expense Tracker -->
+                    <div class="project-card">
+                        <img src="img/projet-expense-tracker.jpg" alt="Expense Tracker — application de suivi de dépenses" class="project-img">
+                        <div class="project-content">
+                            <span class="project-category">Application Web Full-Stack · En cours</span>
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <p class="project-description">
+                                Application web de suivi de dépenses personnelles avec tableau de bord interactif, budgets par catégorie et alertes de dépassement.
+                            </p>
+                            <div class="project-links">
+                                <a href="#projet-expense-tracker-detail" class="project-link lien-detail">
                                     En savoir plus <i class="fas fa-info-circle"></i>
                                 </a>
                             </div>
@@ -223,9 +240,9 @@
                     <!-- ─────────── INTRO GÉNÉRALE ─────────── -->
                     <div class="rftg-intro">
                         <p>
-                            <strong>RFTG</strong> est un projet global de location de films en ligne réalisé dans le cadre du BTS SIO option SLAM.
+                            <strong>RFTG</strong> est un projet global de location de DVDs en ligne réalisé dans le cadre du BTS SIO option SLAM.
                             Il réunit <strong>trois applications interconnectées</strong> autour d'une même base de données, chacune portant un nom issu de l'univers Mario :
-                            une application mobile Android pour les clients, une application web de gestion pour le personnel, et une API REST qui orchestre le tout.
+                            une application mobile Android pour les clients, une application web Laravel de gestion pour le personnel administratif, et une API REST qui orchestre le tout.
                         </p>
 
                         <div class="rftg-meta">
@@ -235,11 +252,7 @@
                             </div>
                             <div class="rftg-meta-item">
                                 <span class="rftg-meta-label">Base de données</span>
-                                <span class="rftg-meta-value">MySQL 8 (dérivée Sakila)</span>
-                            </div>
-                            <div class="rftg-meta-item">
-                                <span class="rftg-meta-label">Statut</span>
-                                <span class="rftg-meta-value">Projet en cours</span>
+                                <span class="rftg-meta-value">MySQL (dérivée Sakila)</span>
                             </div>
                         </div>
                     </div>
@@ -265,7 +278,7 @@
                             <p class="rftg-module-desc">67 endpoints sécurisés par JWT, pont unique entre clients, personnel et base de données.</p>
                         </div>
                         <div class="rftg-module">
-                            <span class="rftg-module-tag">Data · MySQL 8</span>
+                            <span class="rftg-module-tag">Data · MySQL</span>
                             <h3 class="rftg-module-title">Peach</h3>
                             <p class="rftg-module-role">Base de données</p>
                             <p class="rftg-module-desc">Schéma dérivé de Sakila, enrichi de migrations versionnées (v0.2 → v0.7).</p>
@@ -294,6 +307,16 @@
                             </div>
                         </div>
 
+                        <div class="rftg-subsection rftg-video-section">
+                            <h4 class="rftg-subsection-title"><i class="fas fa-play-circle" style="color:var(--primary-color); margin-right:0.4rem;"></i>Démonstration</h4>
+                            <div class="rftg-video-wrap">
+                                <video controls playsinline preload="metadata">
+                                    <source src="ressources/presentation_rftg_luigi.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Stack technique</h4>
                             <table class="rftg-stack-table">
@@ -306,15 +329,12 @@
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Architecture en couches</h4>
                             <ul class="rftg-list">
-                                <li><strong>Activities</strong> — gestion de l'interface et des interactions utilisateur</li>
-                                <li><strong>AsyncTask</strong> — opérations réseau non bloquantes avec callbacks</li>
-                                <li><strong>Managers (Singleton)</strong> — logique métier centralisée (panier, session, URL)</li>
-                                <li><strong>DatabaseHelper</strong> — accès SQLite encapsulé</li>
-                                <li><strong>Adapters</strong> — liaison données ↔ vues (ListView)</li>
+                                <li><strong>Activities</strong> - gestion de l'interface et des interactions utilisateur</li>
+                                <li><strong>AsyncTask</strong> - opérations réseau non bloquantes avec callbacks</li>
+                                <li><strong>Managers (Singleton)</strong> - logique métier centralisée (panier, session, URL)</li>
+                                <li><strong>DatabaseHelper</strong> - accès SQLite encapsulé</li>
+                                <li><strong>Adapters</strong> - liaison données ↔ vues (ListView)</li>
                             </ul>
-                            <p style="font-size:0.92rem; color:var(--text-light); margin-top:0.75rem;">
-                                Patterns implémentés : Singleton, Facade, Observer/Callback, Adapter.
-                            </p>
                         </div>
 
                         <div class="rftg-subsection">
@@ -411,7 +431,7 @@
                             <div class="rftg-sub-headings">
                                 <span class="rftg-sub-kicker">Mario</span>
                                 <h2 class="rftg-sub-title">
-                                    Application web administrative
+                                    Application web Laravel
                                 </h2>
                             </div>
                         </header>
@@ -422,11 +442,23 @@
                             </div>
                         </div>
 
+                        <!-- Décommenter quand presentation_rftg_mario.mp4 est ajouté dans ressources/
+                        <div class="rftg-subsection rftg-video-section">
+                            <h4 class="rftg-subsection-title"><i class="fas fa-play-circle" style="color:var(--primary-color); margin-right:0.4rem;"></i>Démonstration</h4>
+                            <div class="rftg-video-wrap">
+                                <video controls playsinline preload="metadata">
+                                    <source src="ressources/presentation_rftg_mario.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                                </video>
+                            </div>
+                        </div>
+                        -->
+
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Contexte</h4>
                             <p style="font-size:0.98rem; line-height:1.7;">
                                 Application web de gestion interne pour gérer l'application de réservation de DVD. Elle permet au personnel de gérer l'ensemble des opérations métier :
-                                catalogue de films, stock de DVDs, clients et locations. <strong>Aucune base locale</strong> —
+                                catalogue de films, stock de DVDs, clients et locations. Aucune base locale,
                                 toutes les données sont consommées via l'API REST Toad.
                             </p>
                         </div>
@@ -445,7 +477,7 @@
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Architecture</h4>
                             <p style="font-size:0.95rem; line-height:1.7; margin-bottom:1rem;">
-                                Architecture MVC avec couche de services, entièrement découplée d'une base de données locale.
+                                Architecture MVC avec couche de services.
                                 Authentification sur mesure <strong>sans Eloquent ni Breeze</strong> : le mot de passe est envoyé hashé (SHA-256) à l'endpoint <code>/staffs/verify</code>.
                                 En retour, un token JWT est stocké en session et transmis en Bearer sur chaque appel API sécurisé. Toutes les routes sont protégées par le middleware <code>auth</code>.
                             </p>
@@ -454,10 +486,10 @@
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Fonctionnalités</h4>
                             <ul class="rftg-list">
-                                <li><strong>Films</strong> — liste, fiche détail, création, modification, suppression</li>
-                                <li><strong>DVDs / Inventaire</strong> — gestion du stock physique par film</li>
-                                <li><strong>Clients</strong> — CRUD complet avec gestion de l'état actif / inactif</li>
-                                <li><strong>Locations</strong> — suivi temps réel avec changement de statut (En cours / Dans le panier / Terminé)</li>
+                                <li><strong>Films</strong> - liste, fiche détail, création, modification, suppression</li>
+                                <li><strong>DVDs / Inventaire</strong> - gestion du stock physique par film</li>
+                                <li><strong>Clients</strong> - CRUD complet avec gestion de l'état actif / inactif</li>
+                                <li><strong>Locations</strong> - suivi temps réel avec changement de statut (En cours / Dans le panier / Terminé)</li>
                             </ul>
                         </div>
 
@@ -524,8 +556,7 @@
                             <div class="rftg-sub-headings">
                                 <span class="rftg-sub-kicker">Toad</span>
                                 <h2 class="rftg-sub-title">
-                                    API REST centrale
-                                    <small>Spring Boot — pont central du système</small>
+                                    API REST 
                                 </h2>
                             </div>
                         </header>
@@ -533,8 +564,8 @@
                         <div class="rftg-subsection">
                             <h4 class="rftg-subsection-title">Présentation</h4>
                             <p style="font-size:0.98rem; line-height:1.7;">
-                                Application web permettant à des clients de consulter un catalogue de films, gérer un panier, louer des DVDs et laisser des commentaires.
-                                Côté administration, elle expose une API complète pour piloter les stocks, les employés, les magasins et les transactions.
+                                Toad est une API REST de gestion de location de DVDs, développée dans le cadre du BTS SIO (option SLAM) - année 2025-2026.
+                                L'API permet à des clients de consulter un catalogue de films, de gérer un panier et de louer des DVDs. Elle expose également un ensemble de routes d'administration pour piloter les stocks, les employés, les magasins et les transactions.
                             </p>
                         </div>
 
@@ -560,15 +591,8 @@
                         </div>
 
                         <div class="rftg-subsection">
-                            <h4 class="rftg-subsection-title">Fonctionnalités principales</h4>
                             <ul class="rftg-list">
-                                <li><strong>Authentification</strong> — connexion sécurisée par token JWT (expiration 24h), gestion des rôles client / staff</li>
-                                <li><strong>Catalogue films</strong> — parcours paginé, détail par film, filtrage par acteur, réalisateur et catégorie</li>
-                                <li><strong>Panier &amp; location</strong> — ajout au panier, vérification de disponibilité en stock, validation et suivi</li>
-                                <li><strong>Commentaires</strong> — dépôt d'avis par les clients sur les films</li>
-                                <li><strong>Gestion métier</strong> — CRUD complet : films, acteurs, réalisateurs, catégories, inventaires, clients, employés, magasins</li>
-                                <li><strong>Suivi des stocks</strong> — vérification temps réel de la disponibilité des copies par magasin</li>
-                            </ul>
+                                <li><strong>Authentification</strong> - connexion sécurisée par token JWT (expiration 24h), gestion des rôles client / staff</li>
                         </div>
 
                         <div class="rftg-subsection">
@@ -885,7 +909,7 @@
                 </a>
 
                 <div class="project-detail-header">
-                    <h1>MTCongés — Application de gestion des congés</h1>
+                    <h1>MTCongés - Application de gestion des congés</h1>
                     <span class="project-category">Application Java • BTS SIO</span>
                 </div>
 
@@ -1351,6 +1375,175 @@
                         </div>
                     </details>
                 </div>
+
+            </div>
+        </section>
+
+        <!-- Détail : Expense Tracker -->
+        <section id="projet-expense-tracker-detail" class="project-detail section page-inactive">
+            <div class="container">
+                <a href="#projets" class="back-link lien-detail">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+
+                <div class="project-detail-header">
+                    <h1>Expense Tracker</h1>
+                    <span class="project-category">Application Web Full-Stack · Projet Personnel · En cours</span>
+                </div>
+
+                <!-- ─── INTRO ─── -->
+                <div class="rftg-intro">
+                    <p>
+                        <strong>Expense Tracker</strong> est une application full-stack de suivi de dépenses personnelles permettant à chaque utilisateur de gérer son budget au quotidien,
+                        visualiser ses habitudes de consommation et recevoir des alertes en cas de dépassement.
+                        Ce projet a été conçu dans un but d'apprentissage et de mise en pratique de technologies modernes du développement web.
+                        La première modélisation de la base de données a été réalisée avec <strong>Looping</strong>.
+                    </p>
+                    <div class="rftg-meta">
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Runtime</span>
+                            <span class="rftg-meta-value">Node.js</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Base de données</span>
+                            <span class="rftg-meta-value">PostgreSQL + Prisma</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Déploiement</span>
+                            <span class="rftg-meta-value">Docker · Railway</span>
+                        </div>
+                        <div class="rftg-meta-item">
+                            <span class="rftg-meta-label">Statut</span>
+                            <span class="rftg-meta-value">En cours de développement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ─── MODULES ─── -->
+                <div class="rftg-modules">
+                    <div class="rftg-module">
+                        <span class="rftg-module-tag">Sécurité</span>
+                        <h3 class="rftg-module-title">Authentification</h3>
+                        <p class="rftg-module-role">JWT + bcrypt</p>
+                        <p class="rftg-module-desc">Inscription et connexion sécurisées — chaque utilisateur n'accède qu'à ses propres données.</p>
+                    </div>
+                    <div class="rftg-module">
+                        <span class="rftg-module-tag">Gestion</span>
+                        <h3 class="rftg-module-title">Dépenses & Catégories</h3>
+                        <p class="rftg-module-role">CRUD complet</p>
+                        <p class="rftg-module-desc">Ajout, modification et suppression de dépenses avec filtres par date et par catégorie personnalisée.</p>
+                    </div>
+                    <div class="rftg-module">
+                        <span class="rftg-module-tag">Visualisation</span>
+                        <h3 class="rftg-module-title">Tableau de bord</h3>
+                        <p class="rftg-module-role">Chart.js</p>
+                        <p class="rftg-module-desc">Graphiques de répartition par catégorie, comparaison mois par mois et historique des dernières dépenses.</p>
+                    </div>
+                    <div class="rftg-module">
+                        <span class="rftg-module-tag">Alertes</span>
+                        <h3 class="rftg-module-title">Budgets mensuels</h3>
+                        <p class="rftg-module-role">Indicateurs visuels</p>
+                        <p class="rftg-module-desc">Définition d'un budget par catégorie avec indicateur de dépassement et récapitulatif du restant disponible.</p>
+                    </div>
+                </div>
+
+                <!-- ═══ FONCTIONNALITÉS ═══ -->
+                <article class="rftg-subproject">
+                    <header class="rftg-subproject-head">
+                        <div class="rftg-sub-icon"><i class="fas fa-list-ul"></i></div>
+                        <div class="rftg-sub-headings">
+                            <span class="rftg-sub-kicker">Fonctionnalités</span>
+                            <h2 class="rftg-sub-title">Ce que permet l'application</h2>
+                        </div>
+                    </header>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title"><i class="fas fa-lock" style="color:var(--primary-color); margin-right:0.4rem;"></i>Authentification</h4>
+                        <ul class="rftg-list">
+                            <li>Inscription et connexion sécurisées</li>
+                            <li>Authentification par token JWT</li>
+                            <li>Isolation totale des données par utilisateur</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title"><i class="fas fa-wallet" style="color:var(--primary-color); margin-right:0.4rem;"></i>Gestion des dépenses</h4>
+                        <ul class="rftg-list">
+                            <li>Ajouter, modifier et supprimer une dépense</li>
+                            <li>Chaque dépense comporte : montant, catégorie, date et description</li>
+                            <li>Filtrage par date ou par catégorie</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title"><i class="fas fa-tags" style="color:var(--primary-color); margin-right:0.4rem;"></i>Catégories</h4>
+                        <ul class="rftg-list">
+                            <li>Catégories personnalisées (alimentation, transport, loisirs…)</li>
+                            <li>Couleur associée à chaque catégorie</li>
+                            <li>Budget mensuel défini par catégorie</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title"><i class="fas fa-chart-pie" style="color:var(--primary-color); margin-right:0.4rem;"></i>Tableau de bord</h4>
+                        <ul class="rftg-list">
+                            <li>Total des dépenses du mois en cours</li>
+                            <li>Répartition par catégorie (graphique Chart.js)</li>
+                            <li>Comparaison des dépenses mois par mois</li>
+                            <li>Historique des dernières dépenses</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title"><i class="fas fa-bell" style="color:var(--primary-color); margin-right:0.4rem;"></i>Alertes budget</h4>
+                        <ul class="rftg-list">
+                            <li>Indicateur visuel en cas de dépassement du budget d'une catégorie</li>
+                            <li>Récapitulatif du budget restant par catégorie</li>
+                        </ul>
+                    </div>
+
+                    <div class="rftg-subsection">
+                        <h4 class="rftg-subsection-title">Parcours utilisateur</h4>
+                        <div class="rftg-flow">
+                            <span class="rftg-flow-step">Inscription</span>
+                            <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="rftg-flow-step">Connexion JWT</span>
+                            <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="rftg-flow-step">Saisie dépenses</span>
+                            <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="rftg-flow-step">Tableau de bord</span>
+                            <span class="rftg-flow-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="rftg-flow-step">Alertes budget</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ═══ STACK TECHNIQUE ═══ -->
+                <article class="rftg-subproject">
+                    <header class="rftg-subproject-head">
+                        <div class="rftg-sub-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="rftg-sub-headings">
+                            <span class="rftg-sub-kicker">Stack technique</span>
+                            <h2 class="rftg-sub-title">Technologies utilisées</h2>
+                        </div>
+                    </header>
+
+                    <div class="rftg-subsection">
+                        <table class="rftg-stack-table">
+                            <tr><td>Runtime</td><td>Node.js</td></tr>
+                            <tr><td>Framework backend</td><td>Express.js</td></tr>
+                            <tr><td>Base de données</td><td>PostgreSQL</td></tr>
+                            <tr><td>ORM</td><td>Prisma</td></tr>
+                            <tr><td>Authentification</td><td>JWT + bcrypt</td></tr>
+                            <tr><td>Frontend</td><td>HTML / CSS / JavaScript vanilla</td></tr>
+                            <tr><td>Graphiques</td><td>Chart.js</td></tr>
+                            <tr><td>Documentation API</td><td>Swagger</td></tr>
+                            <tr><td>Conteneurisation</td><td>Docker + docker-compose</td></tr>
+                            <tr><td>Déploiement</td><td>Railway</td></tr>
+                            <tr><td>Modélisation BDD</td><td>Looping</td></tr>
+                        </table>
+                    </div>
+                </article>
 
             </div>
         </section>
